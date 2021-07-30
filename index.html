@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1921f4b969.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="wrapper">
+            <h1>Todo-List</h1>
+            <div class="input-wrapper">
+                <input id="input-el" type="text" placeholder="Madde Ekle">
+                <button id="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+            <ul id="ul-el">
+                <li>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">madde 1</label><button
+                        onclick="$(this).parent().hide();"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                </li>
+                <li>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2">madde 2</label><button
+                        onclick="$(this).parent().hide();"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                </li>
+                <li>
+                    <input id="checkbox3" type="checkbox"><label for="checkbox3">madde 3</label><button
+                        onclick="$(this).parent().hide();"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
